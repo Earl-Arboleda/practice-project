@@ -1,19 +1,22 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+
+/* .App {
   text-align: center;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
+} */
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .logoimg {
+    animation: App-logo-spin infinite 10s linear;
   }
 }
 
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -26,7 +29,7 @@
 
 .App-link {
   color: #61dafb;
-}
+} */
 
 @keyframes App-logo-spin {
   from {
@@ -35,4 +38,134 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.head{
+  background-color: #00AAFF;
+  box-shadow: 0px 5px rgba(36, 35, 35, 0.221);
+  height: 120px;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.head img{
+  height: 100px;
+  width: 100px;
+  margin:10px;
+  border-radius: 50px;
+
+}
+
+.head-in{
+  display: flex;
+  height: 120;
+}
+
+.head-in h1{
+  height: auto;
+  color: white;
+  font-size: 60px;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.search{
+  padding: 30px;
+  cursor: pointer;
+}
+
+.search input{
+  height: 60px;
+  width: 60px;
+  margin-right: -60px;
+  border-radius: 50px;
+  border: none;
+  transition: all .5s ease-in-out;
+  padding: 0px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.search input:focus{
+  width: 400px;
+  border: 2px #00AAFF;
+  
+}
+
+.search i{
+  border:none;
+}
+
+.search button{
+  height: 58px;
+  width: 58px;
+  border: none;
+  border-radius: 50px;
+}
+
+body{
+  background-color:white;
+}
+
+.card{
+  border: none;
+  background-color: #33BBFF;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  height: 300px;
+  width: 300px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+  
+  font-family: 'Poppins', sans-serif;
+  transition: all .5s ease;
+}
+
+.card:hover{
+  height: 400px;
+  width: 300px;
+
+}
+
+.card:hover img{
+  border-radius: 10px;
+  height: 200px;
+  width: 300px;
+
+}
+
+.card img{
+  height: 120px;
+  width: 120px;
+  border-radius: 60px;
+  transition: all .5s ease;
+  
+}
+
+.content-box{
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  margin: 0px 20px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 5px 0 rgba(0, 0, 0, 0.2) inset, 2px 6px 10px 0 rgba(0, 0, 0, 0.19) inset;
+  height: 600px;
+} 
+
+.container-user{
+  height: 270px;
+  display: flex;
+  padding: 30px;
+}
+
+.userimg img{
+  height: 250px;
+  width: 250px;
+  border-radius: 150px;
+}
+
+.userInfo{
+padding: 30px;
 }
